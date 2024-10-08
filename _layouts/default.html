@@ -21,6 +21,14 @@ e.page()}();
 </script>
   </head>
   <body>
+    <script>
+        rudderanalytics.track("Product Reviewed", {
+  review_id: "86ac1cd43",
+  product_id: "9578257311",
+  rating: 3.0,
+  review_body: "OK for the price. It works but the material feels flimsy."
+})
+        </script>
 
       <header>
         <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
