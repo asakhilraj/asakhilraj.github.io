@@ -22,20 +22,50 @@ e.page()}();
   </head>
   <body>
     <script>
-        rudderanalytics.track("Product Reviewed", {
-  review_id: "86ac1cd43",
-  product_id: "9578257311",
-  rating: 3.0,
-  review_body: "OK for the price. It works but the material feels flimsy."
-})
-
-      rudderanalytics.alias("user-test-akhil-new")
       
-      rudderanalytics.identify("user-test-akhil-new", {
+      rudderanalytics.identify("user-test-akhil-new2", {
   name: "AkhilRaj",
   email: "akhiltest@example.com",
   logins: 2
 })
+
+      rudderanalytics.track("Order Completed", {
+  checkout_id: "70324a1f0eaf000000000000",
+  order_id: "40684e8f0eaf000000000000",
+  affiliation: "Vandelay Games",
+  total: 52.0,
+  subtotal: 45.0,
+  revenue: 50.0,
+  shipping: 4.0,
+  tax: 3.0,
+  discount: 5.0,
+  coupon: "NEWCUST5",
+  currency: "USD",
+  products: [
+    {
+      product_id: "622c6f5d5cf86a4c77358033",
+      sku: "8472-998-0112",
+      name: "Cones of Dunshire",
+      price: 40,
+      position: 1,
+      category: "Games",
+      url: "https://www.website.com/product/path",
+      image_url: "https://www.website.com/product/path.jpg",
+    },
+    {
+      product_id: "577c6f5d5cf86a4c7735ba03",
+      sku: "3309-483-2201",
+      name: "Five Crowns",
+      price: 5,
+      position: 2,
+      category: "Games",
+    },
+  ],
+})
+
+      
+
+      
       //rudderanalytics.alias("user-test-akhil")
 
         </script>
